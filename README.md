@@ -4,6 +4,12 @@ Simple API client for the [CoinGate](https://coingate.com/) service.
 
 ## Usage
 
+### Virtualenv
+You can use `pipenv` tool for development: 
+ - create virtualenv: `pipenv --python /path/to/python`
+ - install dependencies: `pipenv lock && pipenv install`
+ - open virtualenv shell: `pipenv shell` (optional)
+
 ### Latest API version
 
 ```python
@@ -20,7 +26,7 @@ from coingate.client import CoinGateV2Client, CoinGateV2Order
 
 # Create a client
 # To use the production API, add env="live"
-client = CoinGateV1Client("app_id", "api_token"")
+client = CoinGateV2Client("app_id", "api_token")
 
 # Prepare an order
 new_order = CoinGateV2Order.new(
