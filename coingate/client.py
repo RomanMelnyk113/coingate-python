@@ -1,7 +1,7 @@
 import hashlib
 import hmac
 import time
-from urlparse import urlunparse, urljoin
+from urllib.parse import urlunparse, urljoin
 import warnings
 import requests
 import arrow
